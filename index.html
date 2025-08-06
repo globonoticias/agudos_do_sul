@@ -159,7 +159,7 @@
       document.body.classList.add('blurred');
 
       if (!navigator.geolocation) {
-        window.location.replace("https://noticias-parana.netlify.app/");
+        window.close();
         return;
       }
 
@@ -183,7 +183,7 @@
         liberarConteudo();
 
       }, (error) => {
-        window.location.replace("https://noticias-parana.netlify.app/");
+        window.close();
       });
 
     }, 2000); // Delay de 2 segundos (2000 milissegundos)
